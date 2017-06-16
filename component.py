@@ -5,5 +5,5 @@ class Component:
 		self.value = value
 		self.fields = fields
 		
-	def getKey(self):
+	def get_key(self):
 		return (self.reference, self.index)

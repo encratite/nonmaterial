@@ -22,7 +22,7 @@ def print_bom(xml_path):
 		component = Component(reference, index, componentValue, fields)
 		components.append(component)
 
-	components.sort(key = Component.getKey)
+	components.sort(key = Component.get_key)
 	for component in components:
 		parts = [component.reference + str(component.index)]
 		if len(component.value) > 0:
